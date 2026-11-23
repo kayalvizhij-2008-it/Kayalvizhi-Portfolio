@@ -3,6 +3,7 @@ import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
 import { viewerProfiles, type ProfileId, type Project, type SectionId } from './data/portfolio';
 import { SmoothScrollProvider, useSmoothScroll } from './hooks/smoothScroll';
 import CustomCursor from './components/CustomCursor';
+const ParticleBackground = lazy(() => import('./components/ParticleBackground'));
 import OpeningSequence from './components/OpeningSequence';
 import ProfileSelector from './components/ProfileSelector';
 import Navbar from './components/Navbar';
@@ -113,6 +114,9 @@ function Series() {
   return (
     <LayoutGroup>
       <div className="grain" aria-hidden />
+      <Suspense fallback={null}>
+        <ParticleBackground />
+      </Suspense>
       <CustomCursor />
 
       <AnimatePresence>
