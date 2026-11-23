@@ -24,8 +24,8 @@ export const profile = {
   },
   resumePdf: '/assets/Kayalvizhi_J_Resume.pdf',
   portrait: {
-    src: '/assets/portrait-720.webp',
-    srcSet: '/assets/portrait-420.webp 420w, /assets/portrait-720.webp 720w, /assets/portrait-1100.webp 1100w',
+    src: '/assets/kayalvizhi-portrait.jpg',
+    srcSet: '/assets/kayalvizhi-portrait.jpg 720w',
     alt: 'Portrait of Kayalvizhi J',
   },
   interests: ['Artificial Intelligence', 'Machine Learning', 'Full-Stack Engineering', 'Backend Systems'],
